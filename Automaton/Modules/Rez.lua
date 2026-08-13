@@ -26,6 +26,21 @@ L:RegisterTranslations("enUS", function() return {
 	["Accepting resurrect in %s..."] = true,
 } end)
 
+L:RegisterTranslations("frFR", function() return {
+	["Rez"] = "Résurrection",
+	["Options for accepting resurrection requests."] = "Options d'acceptation des demandes de résurrection.",
+	["Persist"] = "Persistant",
+	["With this option enabled, AutoRez will persist for every resurrection request."] = "Quand cette option est activée, la résurrection automatique reste active après chaque demande.",
+	["Delay"] = "Délai",
+	["With this option enabled, automatic resurrection accept is delayed."] = "Retarde l'acceptation automatique des résurrections.",
+	["Delay Time"] = "Durée du délai",
+	["Set the time, in seconds, to wait before automatically accepting resurrections."] = "Définir le délai, en secondes, avant d'accepter automatiquement une résurrection.",
+	["Ignore Battle Resurrections"] = "Ignorer les résurrections en combat",
+	["With this option enabled, resurrections from druids will not be automatically accepted."] = "Quand cette option est activée, les résurrections lancées par des druides ne sont pas acceptées automatiquement.",
+	["%s is a druid! Not auto-accepting this resurrection."] = "%s est un druide ! Cette résurrection n'est pas acceptée automatiquement.",
+	["Accepting resurrect in %s..."] = "Acceptation de la résurrection dans %s...",
+} end)
+
 L:RegisterTranslations("ruRU", function() return {
     ["Rez"] = "Воскрешение",
 	["Options for accepting resurrection requests."] = "Настройки принятия запроса воскрешения.",

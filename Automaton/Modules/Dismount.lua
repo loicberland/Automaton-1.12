@@ -15,6 +15,11 @@ L:RegisterTranslations("enUS", function() return {
 	["Automatically dismount, cancel forms druid, shaman, priest, when you receive the appropriate error"] = true,
 } end)
 
+L:RegisterTranslations("frFR", function() return {
+	["Dismount"] = "Descendre de monture",
+	["Automatically dismount, cancel forms druid, shaman, priest, when you receive the appropriate error"] = "Descend automatiquement de monture ou annule les formes de druide, de chaman et de prêtre lorsqu'une erreur correspondante est reçue.",
+} end)
+
 L:RegisterTranslations("ruRU", function() return {
     ["Dismount"] = "Спешивание",
 	["Automatically dismount, cancel forms druid, shaman, priest, when you receive the appropriate error"] = "Автоматическое спешивание, отмена форм друида шамана жреца, когда вы получаете соответствующую ошибку",

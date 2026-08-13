@@ -8,6 +8,12 @@ L:RegisterTranslations("enUS", function() return {
 	["Automatically complete quests and skip gossip text"] = true,
 	["Enabled"] = true,
 	["Suspend/resume this module"] = true,
+	["Too many gossips to pick from, doing nothing."] = true,
+	["Not AutoGossiping because there's an available or active quest."] = true,
+	["AutoAccepting %s."] = true,
+	["AutoCompleting %s."] = true,
+	["AutoRewardPicking %s."] = true,
+	["AutoActiveQuest: %s"] = true,
 
 	--------------
 	-- Gossip Text
@@ -102,9 +108,17 @@ L:RegisterTranslations("enUS", function() return {
 	["Invader's Scourgestone"] = true,
 	["Corruptor's Scourgestones"] = true,
 	["Corruptor's Scourgestone"] = true,
+	["Bone Fragments Quest"] = "Bone Fragments",
+	["Bone Fragments Item"] = "Bone Fragments",
 	["Bone Fragments"] = true,
+	["Core of Elements Quest"] = "Core of Elements",
+	["Core of Elements Item"] = "Core of Elements",
 	["Core of Elements"] = true,
+	["Crypt Fiend Parts Quest"] = "Crypt Fiend Parts",
+	["Crypt Fiend Parts Item"] = "Crypt Fiend Parts",
 	["Crypt Fiend Parts"] = true,
+	["Dark Iron Scraps Quest"] = "Dark Iron Scraps",
+	["Dark Iron Scraps Item"] = "Dark Iron Scraps",
 	["Dark Iron Scraps"] = true,
 	["Savage Fronds"] = true,
 	["Savage Frond"] = true,
@@ -173,6 +187,8 @@ L:RegisterTranslations("enUS", function() return {
 	["Shardtooth E'ko Quest"] = "Shardtooth E'ko",
 	["Wildkin E'ko Item"] = "Wildkin E'ko",
 	["Wildkin E'ko Quest"] = "Wildkin E'ko",
+	["Winterfall E'ko Item"] = "Winterfall E'ko",
+	["Winterfall E'ko Quest"] = "Winterfall E'ko",
 	["Winterfall E'ko"] = true,
 
 	-- Zul'Gurub quests

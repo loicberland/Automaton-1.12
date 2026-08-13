@@ -17,6 +17,11 @@ L:RegisterTranslations("enUS", function() return {
 	["Automatically attack."] = true,
 } end)
 
+L:RegisterTranslations("frFR", function() return {
+	["Attack"] = "Attaque",
+	["Automatically attack."] = "Active automatiquement l'attaque.",
+} end)
+
 L:RegisterTranslations("ruRU", function() return {
 	["Attack"] = "Атака",
 	["Automatically attack."] = "Автоматическая атака",

@@ -15,6 +15,11 @@ L:RegisterTranslations("enUS", function() return {
 	["Auto ready when checking raid"] = true,
 } end)
 
+L:RegisterTranslations("frFR", function() return {
+	["Ready"] = "Prêt",
+	["Auto ready when checking raid"] = "Répond automatiquement « Prêt » aux appels de raid.",
+} end)
+
 L:RegisterTranslations("ruRU", function() return {
 	["Ready"] = "Готовность",
 	["Auto ready when checking raid"] = "Автоматическая готовность при проверке рейда",

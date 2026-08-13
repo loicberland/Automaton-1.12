@@ -21,6 +21,17 @@ L:RegisterTranslations("enUS", function() return {
 	["Joining %s..."] = true,
 } end)
 
+L:RegisterTranslations("frFR", function() return {
+	["Queue"] = "File d'attente",
+	["Options for accepting Battleground queues."] = "Options d'acceptation des files d'attente de champs de bataille.",
+	["Delay"] = "Délai",
+	["With this option enabled, automatic battleground entry is delayed for 100 seconds."] = "Quand cette option est activée, l'entrée automatique dans le champ de bataille est retardée de 100 secondes.",
+	["Join"] = "Rejoindre",
+	["Joins battleground queues when the battlefield window is displayed."] = "Rejoint le champ de bataille lorsque la fenêtre correspondante s'affiche.",
+	["Joining %s in 1:00..."] = "Entrée dans %s dans 1 min...",
+	["Joining %s..."] = "Entrée dans %s...",
+} end)
+
 L:RegisterTranslations("ruRU", function() return {
     ["Queue"] = "Очередь",
 	["Options for accepting Battleground queues."] = "Настройки для принятия очереди поля боя.",

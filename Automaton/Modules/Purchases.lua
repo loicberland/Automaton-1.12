@@ -44,6 +44,35 @@ L:RegisterTranslations("enUS", function() return {
 	["Wild Thornroot"] = true,
 } end)
 
+L:RegisterTranslations("frFR", function() return {
+	["Purchases"] = "Achats",
+	["Automatically restock items"] = "Réapprovisionne automatiquement les objets.",
+	["Reagent"] = "Composant",
+	["Set item to buy"] = "Choisir l'objet à acheter.",
+	["Quantity"] = "Quantité",
+	["Set the number of purchased items"] = "Définir la quantité d'objets à conserver.",
+	["Bought "] = "Acheté : ",
+	[" items."] = " objet(s).",
+	["Already have "] = "Déjà en stock : ",
+	["Ankh"] = "Ankh",
+	["Arcane Powder"] = "Poudre des arcanes",
+	["Ashwood Seed"] = "Graine de frêne",
+	["Demonic Figurine"] = "Figurine démoniaque",
+	["Holy Candle"] = "Bougie sanctifiée",
+	["Hornbeam Seed"] = "Graine de charme",
+	["Infernal Stone"] = "Pierre infernale",
+	["Ironwood Seed"] = "Graine de bois de fer",
+	["Maple Seed"] = "Graine d'érable",
+	["Rune of Portals"] = "Rune des portails",
+	["Rune of Teleportation"] = "Rune de téléportation",
+	["Sacred Candle"] = "Bougie sacrée",
+	["Stranglethorn Seed"] = "Graine de strangleronce",
+	["Symbol of Divinity"] = "Symbole de divinité",
+	["Symbol of Kings"] = "Symbole des rois",
+	["Wild Berries"] = "Baies sauvages",
+	["Wild Thornroot"] = "Ronceterre sauvage",
+} end)
+
 L:RegisterTranslations("ruRU", function() return {
 	["Purchases"] = "Покупки",
 	["Automatically restock items"] = "Автоматическое пополнение предметов.",

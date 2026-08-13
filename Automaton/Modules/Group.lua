@@ -19,9 +19,29 @@ L:RegisterTranslations("enUS", function() return {
     ["Decline party invites from unknown sources."] = true,
 	["Delay"] = true,
 	["With this option enabled, automatic joining or declining is delayed for 55 seconds."] = true,
-    ["Declining party invitation..."] = true,
+	["Declining party invitation..."] = true,
 	["Accepting invite in 55..."] = true,
 	["Declining invite in 55..."] = true,
+	["Accepting an invite"] = true,
+	["Trying to close the window"] = true,
+	["Processing invite..."] = true,
+} end)
+
+L:RegisterTranslations("frFR", function() return {
+	["Group"] = "Groupe",
+	["Options for accepting or declining group invites."] = "Options d'acceptation ou de refus des invitations de groupe.",
+	["Who"] = "Recherche /who",
+	["Perform a /who on incoming party invites from unknown sources."] = "Effectuer un /who lors d'une invitation de groupe provenant d'un joueur inconnu.",
+	["Decline"] = "Refuser",
+	["Decline party invites from unknown sources."] = "Refuser les invitations de groupe provenant de joueurs inconnus.",
+	["Delay"] = "Délai",
+	["With this option enabled, automatic joining or declining is delayed for 55 seconds."] = "Quand cette option est activée, l'acceptation ou le refus automatique est retardé de 55 secondes.",
+	["Declining party invitation..."] = "Refus de l'invitation de groupe...",
+	["Accepting invite in 55..."] = "Acceptation de l'invitation dans 55 secondes...",
+	["Declining invite in 55..."] = "Refus de l'invitation dans 55 secondes...",
+	["Accepting an invite"] = "Acceptation d'une invitation",
+	["Trying to close the window"] = "Tentative de fermeture de la fenêtre",
+	["Processing invite..."] = "Traitement de l'invitation...",
 } end)
 
 L:RegisterTranslations("ruRU", function() return {
@@ -108,7 +128,7 @@ end
 
 function Automaton_Group:ProcessInvite(accept)
 	if accept then
-		self:Debug("Accepting an invite")
+		self:Debug(L["Accepting an invite"])
 		AcceptGroup()
 		self:RegisterEvent("PARTY_MEMBERS_CHANGED")
 	else
@@ -119,12 +139,12 @@ end
 
 function Automaton_Group:PARTY_MEMBERS_CHANGED()
 	StaticPopup_Hide("PARTY_INVITE")
-	self:Debug("Trying to close the window")
+	self:Debug(L["Trying to close the window"])
 	self:UnregisterEvent("PARTY_MEMBERS_CHANGED")	
 end
 
 function Automaton_Group:PARTY_INVITE_REQUEST(from)
-	self:Debug("Processing invite...")
+	self:Debug(L["Processing invite..."])
 	--local from = arg1
 	local acceptFrom = {}
 	GuildRoster()

@@ -15,6 +15,11 @@ L:RegisterTranslations("enUS", function() return {
 	["Show only available skills at trainers by default."] = true,
 } end)
 
+L:RegisterTranslations("frFR", function() return {
+	["Filter"] = "Filtre",
+	["Show only available skills at trainers by default."] = "Affiche par défaut uniquement les compétences disponibles chez les maîtres.",
+} end)
+
 L:RegisterTranslations("ruRU", function() return {
     ["Filter"] = "Фильтр",
 	["Show only available skills at trainers by default."] = "Показывать только доступные для обучения способности.",

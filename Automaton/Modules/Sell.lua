@@ -35,6 +35,35 @@ L:RegisterTranslations("enUS", function() return {
 	["Ignoring these items:"] = true,
 	["No items are specified to always be sold."] = true,
 	["Always selling these items:"] = true,
+	["ProcessLink: %s"] = true,
+} end)
+
+L:RegisterTranslations("frFR", function() return {
+	["Sell"] = "Vente",
+	["Automatically sell all grey inventory items when at merchant"] = "Vend automatiquement tous les objets gris de l'inventaire chez un marchand.",
+	["Ignore"] = "Ne jamais vendre",
+	["Items that should never be sold."] = "Objets qui ne doivent jamais être vendus.",
+	["List"] = "Liste",
+	["Print all items being ignored by Sell to the screen."] = "Afficher tous les objets ignorés par le module de vente.",
+	["Print all items being sold by Sell to the screen."] = "Afficher tous les objets toujours vendus par le module.",
+	["Add Item"] = "Ajouter un objet",
+	["Add an item to be ignored, accepts item names or links. Name must be exact, and is case sensitive."] = "Ajouter un objet à ne jamais vendre. Les noms et liens d'objets sont acceptés ; le nom doit être exact et respecter la casse.",
+	["Add an item to always besold, accepts item names or links. Name must be exact, and is case sensitive."] = "Ajouter un objet à toujours vendre. Les noms et liens d'objets sont acceptés ; le nom doit être exact et respecter la casse.",
+	["<item name or link>"] = "<nom ou lien de l'objet>",
+	["Remove Item"] = "Retirer un objet",
+	["Removes an item from the ignore list. It must be entered exactly as it was added."] = "Retirer un objet de la liste des objets à ne jamais vendre. Il doit être saisi exactement comme lors de son ajout.",
+	["Removes an item from the always sell list. It must be entered exactly as it was added."] = "Retirer un objet de la liste des objets à toujours vendre. Il doit être saisi exactement comme lors de son ajout.",
+	["Purge"] = "Vider",
+	["Remove all items from the ignore list."] = "Supprimer tous les objets de la liste des objets à ne jamais vendre.",
+	["Remove all items from the always sell list."] = "Supprimer tous les objets de la liste des objets à toujours vendre.",
+	[" items purged."] = " objet(s) supprimé(s).",
+	["Always sell"] = "Toujours vendre",
+	["Items that should always be sold."] = "Objets qui doivent toujours être vendus.",
+	["Ignoring no items."] = "Aucun objet n'est ignoré.",
+	["Ignoring these items:"] = "Objets qui ne seront jamais vendus :",
+	["No items are specified to always be sold."] = "Aucun objet n'est défini pour être toujours vendu.",
+	["Always selling these items:"] = "Objets qui seront toujours vendus :",
+	["ProcessLink: %s"] = "Traitement du lien : %s",
 } end)
 
 L:RegisterTranslations("ruRU", function() return {
@@ -177,18 +206,18 @@ function Automaton_Sell:ProcessLink(link)
 	for color, name in string.gfind(link, "(|c%x+)|Hitem:.+|h%[(.-)%]|h|r") do
 		for k,v in pairs(self.db.profile.ignore) do
 			if (name == v) or (link == v) then
-				self:Debug("ProcessLink: %s", name)
+				self:Debug(L["ProcessLink: %s"], name)
 				return 0
 			end
 		end
 		for k,v in pairs(self.db.profile.custom) do
 			if (name == v) or (link == v) then
-				self:Debug("ProcessLink: %s", name)
+				self:Debug(L["ProcessLink: %s"], name)
 				return 1
 			end
 		end
 		if color == ITEM_QUALITY_COLORS[0].hex then
-			self:Debug("ProcessLink: %s", name)
+			self:Debug(L["ProcessLink: %s"], name)
 			return 1
 		end
 	end

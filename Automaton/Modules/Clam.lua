@@ -15,6 +15,11 @@ L:RegisterTranslations("enUS", function() return {
 	["Search clam shells in inventory and open them after looting"] = true,
 } end)
 
+L:RegisterTranslations("frFR", function() return {
+	["Clam"] = "Coquillages",
+	["Search clam shells in inventory and open them after looting"] = "Recherche les coquillages dans l'inventaire et les ouvre après le butin.",
+} end)
+
 L:RegisterTranslations("ruRU", function() return {
     ["Clam"] = "Моллюск",
 	["Search clam shells in inventory and open them after looting"] = "Находит раковины моллюска в сумке и открывает их",

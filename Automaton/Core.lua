@@ -14,6 +14,15 @@ L:RegisterTranslations("enUS", function() return {
 	["Suspend/resume this module"] = true,
 	["Debugging"] = true,
 	["Toggle debugging for this module"] = true,
+	["Automaton 1.1.2. Revision: 18593"] = true,
+} end)
+
+L:RegisterTranslations("frFR", function() return {
+	["Enabled"] = "Activé",
+	["Suspend/resume this module"] = "Activer ou suspendre ce module.",
+	["Debugging"] = "Débogage",
+	["Toggle debugging for this module"] = "Activer ou désactiver le débogage pour ce module.",
+	["Automaton 1.1.2. Revision: 18593"] = "Automaton 1.1.2. Révision : 18593",
 } end)
 
 L:RegisterTranslations("ruRU", function() return {
@@ -59,7 +68,7 @@ Automaton.options = {
 Automaton:RegisterDB("AutomatonDB")
 Automaton:RegisterChatCommand({"/autocl", "/automatoncl"}, Automaton.options)
 Automaton:RegisterChatCommand({ "/auto", "/automaton"}, function() waterfall:Open('Automaton') end)
-waterfall:Register('Automaton', 'aceOptions', Automaton.options, 'title','Automaton 1.1.2. Revision: 18593','colorR', 1, 'colorG', 0.7, 'colorB', 0.2) 
+waterfall:Register('Automaton', 'aceOptions', Automaton.options, 'title', L["Automaton 1.1.2. Revision: 18593"], 'colorR', 1, 'colorG', 0.7, 'colorB', 0.2)
 
 ------------------------------
 --      Initialization      --

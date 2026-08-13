@@ -13,6 +13,13 @@ local L = AceLibrary("AceLocale-2.2"):new("Automaton_Release")
 L:RegisterTranslations("enUS", function() return {
     ["Release"] = true,
 	["Automatically release to ghost after dying in a battleground"] = true,
+	["Releasing..."] = true,
+} end)
+
+L:RegisterTranslations("frFR", function() return {
+	["Release"] = "Libération de l'esprit",
+	["Automatically release to ghost after dying in a battleground"] = "Libère automatiquement l'esprit après une mort en champ de bataille.",
+	["Releasing..."] = "Libération de l'esprit...",
 } end)
 
 L:RegisterTranslations("ruRU", function() return {
@@ -62,7 +69,7 @@ end
 
 function Automaton_Release:PLAYER_DEAD()
 	if MiniMapBattlefieldFrame.status == "active" then
-		self:Debug("Releasing...")
+		self:Debug(L["Releasing..."])
 		RepopMe()
 	end
 end

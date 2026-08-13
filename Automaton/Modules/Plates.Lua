@@ -15,6 +15,11 @@ L:RegisterTranslations("enUS", function() return {
 	["Shows name plates in combat."] = true,
 } end)
 
+L:RegisterTranslations("frFR", function() return {
+	["Plates"] = "Barres de nom",
+	["Shows name plates in combat."] = "Affiche les barres de nom en combat.",
+} end)
+
 L:RegisterTranslations("ruRU", function() return {
 	["Plates"] = "Индикаторы",
 	["Shows name plates in combat."] = "Показывать индикаторы здоровья в бою",
@@ -67,4 +72,4 @@ end
 
 function Automaton_Plates:PLAYER_REGEN_DISABLED()
 	ShowNameplates()
-end	
+end

@@ -37,6 +37,41 @@ L:RegisterTranslations("enUS", function() return {
 	["Remove all names from the custom list."] = true,
 	["Everyone"] = true,
 	["Allow invite requests from everyone"] = true,
+	["No players in custom list."] = true,
+	["Accepting invites from these players:"] = true,
+	[" names purged."] = true,
+} end)
+
+L:RegisterTranslations("frFR", function() return {
+	["Invite"] = "Invitation",
+	["Options for sending out party invites."] = "Options d'envoi des invitations de groupe.",
+	["Invite text"] = "Mot-clé d'invitation",
+	["The text users send to trigger an invite."] = "Texte que les joueurs doivent envoyer pour déclencher une invitation.",
+	["keyword invite"] = "mot-clé d'invitation",
+	["Ignore case"] = "Ignorer la casse",
+	["Disable case sensitivity for the invite text"] = "Ne pas tenir compte des majuscules et des minuscules dans le mot-clé d'invitation.",
+	["Accept from"] = "Accepter les demandes de",
+	["Accept invites from these people"] = "Accepter les demandes d'invitation de ces joueurs.",
+	["Friends"] = "Amis",
+	["Allow invite requests from players on your friends list"] = "Autoriser les demandes d'invitation des joueurs de votre liste d'amis.",
+	["Guildmates"] = "Membres de la guilde",
+	["Allow invite requests from guildmates"] = "Autoriser les demandes d'invitation des membres de votre guilde.",
+	["Custom list"] = "Liste personnalisée",
+	["Specify a custom list to accept from"] = "Définir une liste personnalisée de joueurs autorisés.",
+	["List"] = "Liste",
+	["Print all names in the custom list."] = "Afficher tous les noms de la liste personnalisée.",
+	["Add Player"] = "Ajouter un joueur",
+	["Add a player to the custom list."] = "Ajouter un joueur à la liste personnalisée.",
+	["<player name>"] = "<nom du joueur>",
+	["Remove Player"] = "Retirer un joueur",
+	["Removes a player from the custom list."] = "Retirer un joueur de la liste personnalisée.",
+	["Purge"] = "Vider",
+	["Remove all names from the custom list."] = "Supprimer tous les noms de la liste personnalisée.",
+	["Everyone"] = "Tout le monde",
+	["Allow invite requests from everyone"] = "Autoriser les demandes d'invitation de tout le monde.",
+	["No players in custom list."] = "Aucun joueur dans la liste personnalisée.",
+	["Accepting invites from these players:"] = "Demandes d'invitation acceptées pour ces joueurs :",
+	[" names purged."] = " nom(s) supprimé(s).",
 } end)
 
 L:RegisterTranslations("ruRU", function() return {
@@ -233,9 +268,9 @@ end
 
 function Automaton_Invite:ListCustom()
 	if table.getn{self.db.profile.custom} == 0 then
-		self:Print("No players in custom list.")
+		self:Print(L["No players in custom list."])
 	else
-		self:Print("Accepting invites from these players:")
+		self:Print(L["Accepting invites from these players:"])
 		for k,v in pairs(self.db.profile.custom) do
 			self:Print(v)
 		end
@@ -243,6 +278,6 @@ function Automaton_Invite:ListCustom()
 end
 
 function Automaton_Invite:PurgeCustomList()
-	self:Print(table.getn{self.db.profile.custom} .. " names purged.")
+	self:Print(table.getn{self.db.profile.custom} .. L[" names purged."])
 	self.db.profile.custom = {}
 end

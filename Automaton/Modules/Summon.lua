@@ -32,6 +32,27 @@ L:RegisterTranslations("enUS", function() return {
 	["Accepting summon..."] = true,
 } end)
 
+L:RegisterTranslations("frFR", function() return {
+	["Summon"] = "Invocation",
+	["Options for accepting summons."] = "Options d'acceptation des invocations.",
+	["Delay"] = "Délai",
+	["With this option enabled, automatic summons are delayed."] = "Retarde l'acceptation automatique des invocations.",
+	["Delay Time"] = "Durée du délai",
+	["Set the time in seconds to delay automatic summon acceptance."] = "Définir le délai, en secondes, avant d'accepter automatiquement une invocation.",
+	["Combat Delay"] = "Attendre la fin du combat",
+	["If summoned while in combat, accept the summon after combat ends."] = "Si vous êtes invoqué en combat, accepter l'invocation à la fin du combat.",
+	["Combat Delay Time"] = "Délai après le combat",
+	["Set the time in seconds to delay automatic summon acceptance after combat ends."] = "Définir le délai, en secondes, avant d'accepter l'invocation après la fin du combat.",
+	["Be Quiet!"] = "Mode silencieux",
+	["Suppress chat frame output from the Summon module."] = "Masquer les messages du module d'invocation dans la fenêtre de discussion.",
+	["Cancelling summon..."] = "Annulation de l'invocation...",
+	["In combat! Accepting summon after combat ends..."] = "En combat ! L'invocation sera acceptée à la fin du combat...",
+	["Left combat. Accepting summon in %s..."] = "Combat terminé. Acceptation de l'invocation dans %s...",
+	["Summon expired!"] = "L'invocation a expiré !",
+	["Accepting summon in %s..."] = "Acceptation de l'invocation dans %s...",
+	["Accepting summon..."] = "Acceptation de l'invocation...",
+} end)
+
 L:RegisterTranslations("ruRU", function() return {
 	["Summon"] = "Призыв",
 	["Options for accepting summons."] = "Настройки принятия призывов",

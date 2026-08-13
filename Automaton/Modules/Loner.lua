@@ -17,6 +17,13 @@ L:RegisterTranslations("enUS", function() return {
 	["Canceling petition..."] = true,
 } end)
 
+L:RegisterTranslations("frFR", function() return {
+	["Loner"] = "Solitaire",
+	["Decline all incoming guild requests and petitions."] = "Refuse toutes les invitations de guilde et les demandes de signature de charte.",
+	["Canceling guild invite..."] = "Refus de l'invitation de guilde...",
+	["Canceling petition..."] = "Refus de la demande de signature...",
+} end)
+
 L:RegisterTranslations("ruRU", function() return {
     ["Loner"] = "Одиночка",
 	["Decline all incoming guild requests and petitions."] = "Отмена всех входящих петиций и приглашений в гильдию.",

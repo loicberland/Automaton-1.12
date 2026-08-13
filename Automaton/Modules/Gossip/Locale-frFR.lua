@@ -4,31 +4,37 @@ L:RegisterTranslations("frFR", function() return {
 	--------------
 	-- Gossip Menu
 	--------------
-	["Gossip"] = "Gossip", -- Need translation
-	["Automatically complete quests and skip gossip text"] = "Automatically complete quests and skip gossip text", -- Need translation
-	["Enabled"] = "Enabled", -- Need translation
-	["Suspend/resume this module"] = "Suspend/resume this module", -- Need translation
+	["Gossip"] = "Dialogues",
+	["Automatically complete quests and skip gossip text"] = "Termine automatiquement certaines quêtes répétables et passe les dialogues prédéfinis.",
+	["Enabled"] = "Activé",
+	["Suspend/resume this module"] = "Activer ou suspendre ce module.",
+	["Too many gossips to pick from, doing nothing."] = "Trop de choix de dialogue possibles, aucune action effectuée.",
+	["Not AutoGossiping because there's an available or active quest."] = "Dialogue automatique annulé car une quête est disponible ou en cours.",
+	["AutoAccepting %s."] = "Acceptation automatique de %s.",
+	["AutoCompleting %s."] = "Validation automatique de %s.",
+	["AutoRewardPicking %s."] = "Sélection automatique de la récompense pour %s.",
+	["AutoActiveQuest: %s"] = "Quête activée automatiquement : %s",
 
 	--------------
 	-- Gossip Text
 	--------------
-	["<Touch the unstable rift crystal.>"] = "<Touch the unstable rift crystal.>", -- MC entrance
-	["<Place my hand on the orb.>"] = "<Placez ma main sur l'orbe.>", -- BWL entrance
-	["Thank you, Stable Master. Please take the animal."] = "Thank you, Stable Master. Please take the animal.", -- Need translation, AV quest
+	["<Touch the unstable rift crystal.>"] = "<Toucher le cristal de faille instable.>", -- MC entrance
+	["<Place my hand on the orb.>"] = "<Poser ma main sur l'orbe.>", -- BWL entrance
+	["Thank you, Stable Master. Please take the animal."] = "Merci, maître des écuries. Veuillez prendre l'animal.", -- AV quest
 	["With pleasure. These things stink!"] = "Avec plaisir ! Ces trucs-là sentent mauvais.", -- AV quest
-	["Trick or Treat!"] = "Trick or Treat!", -- Need translation
+	["Trick or Treat!"] = "Des bonbons ou des blagues !",
 
 	-------------
 	-- Quest Text
 	-------------
 	-- Alterac Valley quests
-	["Empty Stables"] = "Ecuries vides",
+	["Empty Stables"] = "Écuries vides",
 	["Ram Hide Harnesses"] = "Harnais en cuir de bélier",
 	["Alterac Ram Hide"] = "Peau de bélier d'Alterac",
 	["Ram Riding Harnesses"] = "Harnais pour béliers",
 	["Frostwolf Hide"] = "Peau de loup des glaces",
-	["More Booty!"] = "Plus de butin !",
-	["More Armor Scraps"] = "Plus de morceaux d'armure !",
+	["More Booty!"] = "Plus de butin !",
+	["More Armor Scraps"] = "Plus de morceaux d'armure !",
 	["Armor Scraps"] = "Morceaux d'armures",
 	["Coldtooth Supplies"] = "Fournitures de Froide-dent",
 	["Irondeep Supplies"] = "Fournitures de Gouffrefer",
@@ -43,7 +49,7 @@ L:RegisterTranslations("frFR", function() return {
 	["Call of Air - Ichman's Fleet"] = "L'appel des airs - l'escadrille d'Ichman",
 	["Frostwolf Soldier's Medal"] = "Médaille de soldat frostwolf",
 	["Frostwolf Lieutenant's Medal"] = "Médaille de lieutenant frostwolf",
-	["Frostwolf Commander's Medal"] = "	Médaille de commandant frostwolf",
+	["Frostwolf Commander's Medal"] = "Médaille de commandant frostwolf",
 	["Call of Air - Guse's Fleet"] = "L'appel des airs - l'escadrille de Guse",
 	["Call of Air - Jeztor's Fleet"] = "L'appel des airs - l'escadrille de Jeztor",
 	["Call of Air - Mulverick's Fleet"] = "L'appel des airs - l'escadrille de Mulverick",
@@ -57,8 +63,8 @@ L:RegisterTranslations("frFR", function() return {
 	["Conquering Arathi Basin"] = "La conquête du bassin d'Arathi",
 	["Claiming Arathi Basin"] = "La revendication du bassin d'Arathi",
 	["Invaders of Alterac Valley"] = "Les envahisseurs de la vallée d'Alterac",
-	["Remember Alterac Valley!"] = "Souvenez-vous de la vallée d'Alterac !",
-	["Battle of Warsong Gulch"] = "La bataille du goulet des Warsong",
+	["Remember Alterac Valley!"] = "Souvenez-vous de la vallée d'Alterac !",
+	["Battle of Warsong Gulch"] = "La bataille du goulet des Chanteguerres",
 	["Fight for Warsong Gulch"] = "La lutte pour le goulet des Warsong",
 	["Alterac Valley Mark of Honor"] = "Marque d'honneur de la vallée d'Alterac",
 	["Arathi Basin Mark of Honor"] = "Marque d'honneur du bassin d'Arathi",
@@ -96,17 +102,25 @@ L:RegisterTranslations("frFR", function() return {
 	["Encrypted Twilight Text"] = "Texte du crépuscule crypté",
 
 	-- Argent Dawn
-	["Minion's Scourgestones"] = "Pierre du Fléau des serviteurs",
+	["Minion's Scourgestones"] = "Pierres du Fléau des serviteurs",
 	["Minion's Scourgestone"] = "Pierre du Fléau des serviteurs",
 	["Invader's Scourgestones"] = "Pierres du Fléau des envahisseurs",
 	["Invader's Scourgestone"] = "Pierre du Fléau des envahisseurs",
 	["Corruptor's Scourgestones"] = "Pierres du Fléau des corrupteurs",
 	["Corruptor's Scourgestone"] = "Pierre du Fléau des corrupteurs",
+	["Bone Fragments Quest"] = "Des fragments d'os",
+	["Bone Fragments Item"] = "Fragments d'os",
 	["Bone Fragments"] = "Fragments d'os",
-	["Core of Elements"] = "Le noyau des éléments",
-	["Crypt Fiend Parts"] = "Crypt Fiend Parts",
-	["Dark Iron Scraps"] = "Des morceaux de démon des cryptes",
---	["Savage Fronds"] = "",
+	["Core of Elements Quest"] = "Le noyau des éléments",
+	["Core of Elements Item"] = "Noyau des éléments",
+	["Core of Elements"] = "Noyau des éléments",
+	["Crypt Fiend Parts Quest"] = "Des morceaux de démon des cryptes",
+	["Crypt Fiend Parts Item"] = "Morceaux de démon des cryptes",
+	["Crypt Fiend Parts"] = "Morceaux de démon des cryptes",
+	["Dark Iron Scraps Quest"] = "Des morceaux de sombrefer",
+	["Dark Iron Scraps Item"] = "Morceaux de sombrefer",
+	["Dark Iron Scraps"] = "Morceaux de sombrefer",
+	["Savage Fronds"] = "Des palmes sauvages",
 	["Savage Frond"] = "Palme sauvage",
 
 	-- Timbermaw
@@ -118,7 +132,7 @@ L:RegisterTranslations("frFR", function() return {
 	
 	-- Cauldron quests
 	["Gahrron's Withering Cauldron"] = "Chaudron de la Flétrissure de Gahrron",
-	["Writhing Haunt Cauldron"] = "Le Chaudron du Repaire putride",
+	["Writhing Haunt Cauldron"] = "Le chaudron du Repaire putride",
 	["Felstone Field Cauldron"] = "Le Chaudron du champ de Felstone",
 	["Dalson's Tears Cauldron"] = "Chaudron des Larmes de Dalson",
 	["Arcane Quickener"] = "Catalyseur des arcanes",
@@ -141,7 +155,7 @@ L:RegisterTranslations("frFR", function() return {
 	["Heavy Leather"] = "Cuir lourd",
 	["Incendosaur Scale"] = "Ecaille d'Incendosaure",
 	["Coal"] = "Charbon",
-	["Favor Amongst the Brotherhood, Dark Iron Ore"] = "Faveur auprès de la Confrérie, Minerai de sombre",
+	["Favor Amongst the Brotherhood, Dark Iron Ore"] = "Faveur auprès de la Confrérie, Minerai de sombre fer",
 	["Dark Iron Ore"] = "Minerai de sombrefer",
 	["Favor Amongst the Brotherhood, Blood of the Mountain"] = "Faveur auprès de la Confrérie, Sang de la montagne",
 	["Blood of the Mountain"] = "Sang de la montagne",
@@ -173,6 +187,8 @@ L:RegisterTranslations("frFR", function() return {
 	["Shardtooth E'ko Quest"] = "L'E'ko des Crocs acérés",
 	["Wildkin E'ko Item"] = "E'ko d'Indomptable",
 	["Wildkin E'ko Quest"] = "L'E'ko des Indomptables",
+	["Winterfall E'ko Item"] = "E'ko des Tombe-hiver",
+	["Winterfall E'ko Quest"] = "L'E'ko des Tombe-hiver",
 	["Winterfall E'ko"] = "E'ko des Tombe-hiver",
 
 	-- Zul'Gurub quests
@@ -180,46 +196,46 @@ L:RegisterTranslations("frFR", function() return {
 	["Zulian Coin"] = "Pièce zulienne",
 	["Razzashi Coin"] = "Pièce Razzashi",
 	["Hakkari Coin"] = "Pièce hakkari",
-	["Gurubashi, Vilebranch, and Witherbark Coins"] = "Pièces Gurubashi, Vilebranch et Witherbark",
+	["Gurubashi, Vilebranch, and Witherbark Coins"] = "Pièces Gurubashi, Vilebranche et Fânécorce",
 	["Gurubashi Coin"] = "Pièce Gurubashi",
 	["Vilebranch Coin"] = "Pièce Vilebranch",
 	["Witherbark Coin"] = "Pièce Witherbark",
-	["Sandfury, Skullsplitter, and Bloodscalp Coins"] = "Pièces Sandfury, Skullsplitter et Bloodscalp",
+	["Sandfury, Skullsplitter, and Bloodscalp Coins"] = "Pièces Furie-des-sables, Casse-crâne et Scalp-rouge",
 	["Sandfury Coin"] = "Pièce Sandfury",
 	["Skullsplitter Coin"] = "Pièce Skullsplitter",
 	["Bloodscalp Coin"] = "Pièce Bloodscalp",
 	
 	-- AQ War Effort (Horde)
-	["The Horde Needs More Runecloth Bandages!"] = "La Horde a besoin de plus de bandages en étoffe runique !",
-	["The Horde Needs More Mageweave Bandages!"] = "La Horde a besoin de plus de bandages en tisse-mage",
+	["The Horde Needs More Runecloth Bandages!"] = "La Horde a besoin de plus de bandages en étoffe runique !",
+	["The Horde Needs More Mageweave Bandages!"] = "La Horde a besoin de plus de bandages en tisse-mage !",
 	["The Horde Needs More Wool Bandages!"] = "La Horde a besoin de plus de bandages en laine !",
-	["The Horde Needs More Rugged Leather!"] = "La Horde a besoin de plus de cuir robuste !",
+	["The Horde Needs More Rugged Leather!"] = "La Horde a besoin de plus de cuir robuste !",
 	["The Horde Needs More Thick Leather!"] = "La Horde a besoin de plus de cuir épais !",
-	["The Horde Needs More Heavy Leather!"] = "La Horde a besoin de plus de cuir lourd !",
+	["The Horde Needs More Heavy Leather!"] = "La Horde a besoin de plus de cuir lourd !",
 	["The Horde Needs More Purple Lotus!"] = "La Horde a besoin de plus de lotus pourpre !",
 	["The Horde Needs More Firebloom!"] = "La Horde a besoin de plus de fleur de feu !",
-	["The Horde Needs More Mithril Bars!"] = "La Horde a besoin de plus de barres mithril !",
+	["The Horde Needs More Mithril Bars!"] = "La Horde a besoin de plus de barres de mithril !",
 	["The Horde Needs More Tin Bars!"] = "La Horde a besoin de plus de barres d'étain !",
 	["The Horde Needs More Copper Bars!"] = "La Horde a besoin de plus de barres de cuivre !",
 	["The Horde Needs More Lean Wolf Steaks!"] = "La Horde a besoin de plus de steaks de loup !",
-	["The Horde Needs More Spotted Yellowtail!"] = "La Horde a besoin de plus de jaune-queue tacheté !",
-	["The Horde Needs More Baked Salmon!"] = "La Horde a besoin de plus de pain de saumon !",
+	["The Horde Needs More Spotted Yellowtail!"] = "La Horde a besoin de plus de jaunes-queues tachetés !",
+	["The Horde Needs More Baked Salmon!"] = "La Horde a besoin de plus de pains de saumon !",
 
 	-- AQ War Effort (Alliance)
-	["The Alliance Needs More Linen Bandages!"] = "L'Alliance a besoin de plus de bandages en lin !",
-	["The Alliance Needs More Silk Bandages!"] = "L'Alliance a besoin de plus de bandages en soie !",
+	["The Alliance Needs More Linen Bandages!"] = "L'Alliance a besoin de plus de bandages en lin !",
+	["The Alliance Needs More Silk Bandages!"] = "L'Alliance a besoin de plus de bandages en soie !",
 	["The Alliance Needs More Runecloth Bandages!"] = "L'Alliance a besoin de plus de bandages en étoffe runique !",
-	["The Alliance Needs More Medium Leather!"] = "L'Alliance a besoin de plus de cuir moyen !",
+	["The Alliance Needs More Medium Leather!"] = "L'Alliance a besoin de plus de cuir moyen !",
 	["The Alliance Needs More Thick Leather!"] = "L'Alliance a besoin de plus de cuir épais !",
-	["The Alliance Needs More Stranglekelp!"] = "L'Alliance a besoin de plus d'étouffante !",
+	["The Alliance Needs More Stranglekelp!"] = "L'Alliance a besoin de plus d'étouffante !",
 	["The Alliance Needs More Purple Lotus!"] = "L'Alliance a besoin de plus de lotus pourpre !",
-	["The Alliance Needs More Arthas' Tears!"] = "L'Alliance a besoin de plus de l'armes d'Arthas !",
+	["The Alliance Needs More Arthas' Tears!"] = "L'Alliance a besoin de plus de larmes d'Arthas !",
 	["The Alliance Needs More Copper Bars!"] = "L'Alliance a besoin de plus de barres de cuivre !",
 	["The Alliance Needs More Iron Bars!"] = "L'Alliance a besoin de plus de barres de fer !",
 	["The Alliance Needs More Thorium Bars!"] = "L'Alliance a besoin de plus de barres de thorium !",
-	["The Alliance Needs More Rainbow Fin Albacore!"] = "L'Alliance a besoin de plus de thon arc-en-ciel !",
-	["The Alliance Needs More Roast Raptor!"] = "L'Alliance a besoin de plus de rôti de raptor !",
-	["The Alliance Needs More Spotted Yellowtail!"] = "L'Alliance a besoin de plus de jaune-queue tacheté !",
+	["The Alliance Needs More Rainbow Fin Albacore!"] = "L'Alliance a besoin de plus de thon arc-en-ciel !",
+	["The Alliance Needs More Roast Raptor!"] = "L'Alliance a besoin de plus de rôti de raptor !",
+	["The Alliance Needs More Spotted Yellowtail!"] = "L'Alliance a besoin de plus de jaune-queue tacheté !",
 
 	-- AQ War Effort Items
 	["Linen Bandage"] = "Bandage en lin",

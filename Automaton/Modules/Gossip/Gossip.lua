@@ -49,13 +49,13 @@ function Automaton_Gossip:GOSSIP_SHOW()
 	local g = self:ProcessGossip(GetGossipOptions())
 
 	if table.getn(g) > 1 then
-		self:Debug("Too many gossips to pick from, doing nothing.")
+		self:Debug(L["Too many gossips to pick from, doing nothing."])
 		return
 	elseif table.getn(g) == 1 then
 		local z,_ = GetGossipAvailableQuests()
 		local x,_ = GetGossipActiveQuests()
 		if (x or z) and not (g[1][2] == "gossip") then
-			self:Debug("Not AutoGossiping because there's an available or active quest.")
+			self:Debug(L["Not AutoGossiping because there's an available or active quest."])
 		else
 			self:Debug(g[1][1])
 			SelectGossipOption(g[1][3])
@@ -74,7 +74,7 @@ end
 function Automaton_Gossip:QUEST_DETAIL()
 	local q = GetTitleText()
 	if QuestData[q] then
-		self:Debug("AutoAccepting "..q..".")
+		self:Debug(L["AutoAccepting %s."]:format(q))
 		AcceptQuest()
 	end
 end
@@ -82,7 +82,7 @@ end
 function Automaton_Gossip:QUEST_PROGRESS()
 	local q = GetTitleText()
 	if QuestData[q] and IsQuestCompletable() then
-		self:Debug("AutoCompleting "..q..".")
+		self:Debug(L["AutoCompleting %s."]:format(q))
 		CompleteQuest()
 	end
 end
@@ -90,7 +90,7 @@ end
 function Automaton_Gossip:QUEST_COMPLETE()
 	local q = GetTitleText()
 	if QuestData[q] then
-		self:Debug("AutoRewardPicking "..q..".")
+		self:Debug(L["AutoRewardPicking %s."]:format(q))
 		GetQuestReward(0)
 	end
 end
@@ -157,11 +157,11 @@ function Automaton_Gossip:CheckQuests(quests, func)
 				quest = 1
 			end
 		end
-		self:Debug("AutoActiveQuest: "..quests[quest][1])
+		self:Debug(L["AutoActiveQuest: %s"]:format(quests[quest][1]))
 		func(quests[quest][3])
 		return true
 	elseif table.getn(quests) == 1 then
-		self:Debug("AutoActiveQuest: "..quests[1][1])
+		self:Debug(L["AutoActiveQuest: %s"]:format(quests[1][1]))
 		func(quests[1][3])
 		return true
 	end

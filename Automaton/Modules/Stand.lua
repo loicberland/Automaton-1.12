@@ -15,6 +15,11 @@ L:RegisterTranslations("enUS", function() return {
 	["Automatically stand when you receive the 'You must be standing' error"] = true,
 } end)
 
+L:RegisterTranslations("frFR", function() return {
+	["Stand"] = "Se relever",
+	["Automatically stand when you receive the 'You must be standing' error"] = "Se relève automatiquement lorsque l'erreur « Vous devez être debout » est reçue.",
+} end)
+
 L:RegisterTranslations("ruRU", function() return {
 	["Stand"] = "Вставание",
 	["Automatically stand when you receive the 'You must be standing' error"] = "Автоматически вставать, когда вы получаете ошибку \"Вы должны стоять\"",

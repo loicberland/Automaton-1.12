@@ -13,6 +13,13 @@ local L = AceLibrary("AceLocale-2.2"):new("Automaton_LootBOP")
 L:RegisterTranslations("enUS", function() return {
 	["LootBOP"] = true,
 	["Ignore BOP confirm message when not in a party or raid"] = true,
+	["Looting..."] = true,
+} end)
+
+L:RegisterTranslations("frFR", function() return {
+	["LootBOP"] = "Butin lié",
+	["Ignore BOP confirm message when not in a party or raid"] = "Ignore la confirmation des objets liés quand vous n'êtes ni en groupe ni en raid.",
+	["Looting..."] = "Ramassage du butin...",
 } end)
 
 L:RegisterTranslations("ruRU", function() return {
@@ -62,7 +69,7 @@ function Automaton_LootBOP:OnDisable()
 
 function Automaton_LootBOP:LOOT_BIND_CONFIRM(slot)
 	if GetNumPartyMembers() == 0 and GetNumRaidMembers() == 0 then
-		self:Debug("Looting...")
+		self:Debug(L["Looting..."])
 		local dialog = StaticPopup_Show("LOOT_BIND")
 		if dialog then
 			dialog.data = arg1

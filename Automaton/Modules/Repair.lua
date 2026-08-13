@@ -17,6 +17,12 @@ L:RegisterTranslations("enUS", function() return {
     ["Repairing all items for: %s"] = true,
 } end)
 
+L:RegisterTranslations("frFR", function() return {
+	["Repair"] = "Réparation",
+	["Automatically repair all inventory items when at merchant"] = "Répare automatiquement tout l'équipement chez les marchands capables de réparer.",
+	["Repairing all items for: %s"] = "Réparation de tous les objets pour : %s",
+} end)
+
 L:RegisterTranslations("ruRU", function() return {
     ["Repair"] = "Ремонт",
 	["Automatically repair all inventory items when at merchant"] = "Автоматический ремонт всех предметов инвентаря, когда у торговца",

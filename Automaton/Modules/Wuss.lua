@@ -16,6 +16,12 @@ L:RegisterTranslations("enUS", function() return {
     ["Canceling duel..."] = true,
 } end)
 
+L:RegisterTranslations("frFR", function() return {
+	["Wuss"] = "Refus des duels",
+	["Decline all incoming duels. Like the wuss you are."] = "Refuse automatiquement toutes les demandes de duel.",
+	["Canceling duel..."] = "Refus du duel...",
+} end)
+
 L:RegisterTranslations("ruRU", function() return {
     ["Wuss"] = "Слабак",
 	["Decline all incoming duels. Like the wuss you are."] = "Отмена всех входящих дуэлей.",

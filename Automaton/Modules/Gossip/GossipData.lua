@@ -200,17 +200,17 @@ function Automaton_Gossip:GetQuestData()
 		[L["Corruptor's Scourgestones"]] = {
 			items = { [L["Corruptor's Scourgestone"]] = 1 }
 		},
-		[L["Bone Fragments"]] = {
-			items = { [L["Bone Fragments"]] = 30 }
+		[L["Bone Fragments Quest"]] = {
+			items = { [L["Bone Fragments Item"]] = 30 }
 		},
-		[L["Core of Elements"]] = {
-			items = { [L["Core of Elements"]] = 30 }
+		[L["Core of Elements Quest"]] = {
+			items = { [L["Core of Elements Item"]] = 30 }
 		},
-		[L["Crypt Fiend Parts"]] = {
-			items = { [L["Crypt Fiend Parts"]] = 30 }
+		[L["Crypt Fiend Parts Quest"]] = {
+			items = { [L["Crypt Fiend Parts Item"]] = 30 }
 		},
-		[L["Dark Iron Scraps"]] = {
-			items = { [L["Dark Iron Scraps"]] = 30 }
+		[L["Dark Iron Scraps Quest"]] = {
+			items = { [L["Dark Iron Scraps Item"]] = 30 }
 		},
 		[L["Savage Fronds"]] = {
 		items = { [L["Savage Frond"]] = 30 }
@@ -332,8 +332,8 @@ function Automaton_Gossip:GetQuestData()
 		[L["Wildkin E'ko Quest"]] = {
 			items = { [L["Wildkin E'ko Item"]] = 3 }
 		},
-		[L["Winterfall E'ko"]] = {
-			items = { [L["Winterfall E'ko"]] = 3 }
+		[L["Winterfall E'ko Quest"]] = {
+			items = { [L["Winterfall E'ko Item"]] = 3 }
 		},
 		
 		-- Zul'Gurub quests

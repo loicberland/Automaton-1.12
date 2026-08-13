@@ -1,13 +1,14 @@
 ﻿## Interface: 11200
 ## Title: Automaton |cff7fff7f -Ace2-|r
 ## Notes: Reduces interface tedium by doing the little things for you.
+## Notes-frFR: Réduit les tâches répétitives de l'interface en s'occupant automatiquement des petites choses.
 ## Notes-ruRU: Снижает утомление интерфейса, делая маленькие вещи за вас.
 ## Notes-zhCN: 自动帮你完成一些界面上的操作。
 ## Notes-zhTW: 為您減少些介面的沉悶.
 ## Version: 1.1.2
 ## Author: weab, Artur91425
-## X-Category: Interface Enhancements
-## X-Credits: gxam (co-author), ssayclub (koKR translations), Lichery (ruRU translations)
+## X-Category: Améliorations de l'interface
+## X-Credits: gxam (co-auteur), ssayclub (traduction koKR), Lichery (traduction ruRU)
 ## X-Embeds: Ace2, AbacusLib, GratuityLib, SpecialEventsEmbed
 ## X-RelSite-WoWI: 5610
 ## X-AceForum: 2887
